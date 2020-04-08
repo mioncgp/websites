@@ -1,14 +1,4 @@
 
-function initMap() {
-    const loc = { lat: 42.361145, lng: -71.057083};
-    const map = new google.maps.Map(document.querySelector('.map'),
-    {
-        zoom: 14,
-        center: loc
-    })
-    const marker = new google.maps.Marker({ position: loc, map: map});
-}
-
 
 // Sticky menu background
 window.addEventListener('scroll', function() {
@@ -28,7 +18,7 @@ $('#navbar a, .btn').on('click', function(event) {
   
       $('html, body').animate(
         {
-          scrollTop: $(hash).offset().top - 100
+          scrollTop: $(hash).offset().top - 50
         },
         800
       );

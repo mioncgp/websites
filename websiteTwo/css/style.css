@@ -32,6 +32,7 @@ p {
 
 .container {
     max-width: 1100px;
+    height: 30vh;
     margin: auto;
     padding: 0 2rem;
     overflow: hidden;
@@ -42,7 +43,7 @@ p {
 }
 
 .text-primary {
-    color: #93cb52;
+    color: #cc9900;
 }
 
 .l-heading {
@@ -89,7 +90,7 @@ p {
 .btn {
     display: inline-block;
     color: #fff;
-    background: #93cb52;
+    background:#cc9900;
     padding: 0.5rem 2rem;
     border: none;
     border-radius: 5px;
@@ -104,11 +105,11 @@ p {
 }
 
 .btn:hover {
-    background: #7acb52;
+    background:#4D2B02;
 }
 
 .bg-primary {
-    background: #93cb52;
+    background: #cc9900;
     color: #fff;
 }
 
@@ -138,14 +139,14 @@ p {
 }
 
 #navbar ul li a:hover {
-    background: #93cb52;
+    background: #cc9900;
     border-radius: 5px;
 }
 
 /* Showcase */
 
 #showcase {
-    background: #333 url('../img/showcase.jpg') no-repeat center center/cover;
+    background: #333 url('../img/wallpaper-2.jpg') no-repeat center center/cover;
     height: 100vh;
     color: #fff;
 }
@@ -181,7 +182,7 @@ p {
 }
 
 #what .items .item i {
-    background: #93cb52;
+    background: #cc9900;
     padding: 1rem;
     border-radius: 50%;
 }
@@ -189,6 +190,7 @@ p {
 /* Who we are */
 #who {
     display: flex;
+    height: 50vh;
 }
 
 #who div {
@@ -196,7 +198,7 @@ p {
 }
 
 #who .who-img {
-    background: url('../img/people.jpg') no-repeat center center/cover;
+    background: url('../img/bg.jpg') no-repeat center center/cover;
 }
 
 .list li {
@@ -235,4 +237,37 @@ p {
 #contact .contact-form textarea {
     width: 100%;
     padding: 0.75rem;
+}
+
+#main-footer {
+    background-color: #996633;
+}
+
+#who .m-heading {
+    text-align: center;
+}
+
+#who  .center-p {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#who .contacts {
+    display: flex;
+}
+
+#who .contact {
+    background-color: #734d26;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 20vh;
+    width: 20vw;
+    margin: 10px;
+    margin-top: 5rem;
+}
+
+#who .contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }

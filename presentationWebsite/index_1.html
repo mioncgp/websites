@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Presentation Page 1 </title>
+</head>
+<body>
+    <!-- Page 1 (intro) -->
+    <section id="page-1" class="page">
+        <h1>Welcome To My Presentation 1</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat itaque omnis vero dolore. Eos voluptate at perspiciatis voluptatum nam explicabo adipisci iure numquam laudantium, dignissimos maiores recusandae, est optio nostrum cupiditate illo, alias harum repudiandae sit? Tenetur laborum impedit voluptatem.</p>
+        <div>
+            <a href="./index_2.html" class="btn btn-dark">
+                Next Page <i class="fas fa-arrow-circle-down"></i>
+            </a>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/729c5c4f04.js" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script>
+      $('.btn').on('click', function(event) {
+          if(this.hash !== '') {
+              event.preventDefault();
+              const hash = this.hash;
+              $('html, body').animate(
+                  {
+                      scrollTop: $(hash).offset().top
+                  },
+                  800
+              );
+          }
+      });
+  </script>
+</body>
+</html>
