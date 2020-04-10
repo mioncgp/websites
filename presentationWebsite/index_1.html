@@ -18,23 +18,8 @@
         </div>
     </section>
     <script src="https://kit.fontawesome.com/729c5c4f04.js" crossorigin="anonymous"></script>
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-  <script>
-      $('.btn').on('click', function(event) {
-          if(this.hash !== '') {
-              event.preventDefault();
-              const hash = this.hash;
-              $('html, body').animate(
-                  {
-                      scrollTop: $(hash).offset().top
-                  },
-                  800
-              );
-          }
-      });
-  </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
+    <script src='./app.js'>
+    </script>
 </body>
 </html>
