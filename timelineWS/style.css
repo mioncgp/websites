@@ -115,7 +115,7 @@ h1 {
     #timeline ul li:nth-child(even) div {
         left: -284px;
     }
-}
+} 
 
 @media(max-width: 600px) {
     #timeline ul li {
