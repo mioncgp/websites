@@ -9,24 +9,16 @@
     <title>Presentation Page 1 </title>
 </head>
 <body>
+    <div id="particles-js"></div>
     <main id="swup" class="transition-fade">
-        <a class="next" href="/index_2.html">2</a>
         <section class="page" id="page-1">
             <h2>Idiom Of The Day:</h2>
             <h1>Expamles </h1>
             <h2>lololol IPA:</h2>
-            <h3>/əˈbʌv/   /bɔːrd/</h3>
+            <a class='btn' href="/index_3.html"><h3>/əˈbʌv/   /bɔːrd/</h3></a>
         </section>
     </main>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const next = document.querySelector(".next");
-            
-                document.addEventListener("keydown", function(e){
-                next.click();
-        });
-                }, false);
-
-        </script>
+    <script src='./particles.min.js'></script>
+    <script src='./app.js'></script>
 </body>
 </html>

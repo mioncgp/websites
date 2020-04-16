@@ -6,27 +6,19 @@
     <script defer src="node_modules/swup/dist/swup.min.js"></script>
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Presentation Page 2 </title>
+    <title>Presentation Page 1 </title>
 </head>
 <body>
+    <div id="particles-js"></div>
     <main id="swup" class="transition-fade">
-      <a class="next1" href="/index_1.html">1</a>
         <section class="page" id="page-1">
-            <h2>Idiom Of The Day3333333:</h2>
+            <h2>Idiom Of The Day:</h2>
             <h1>Expamles </h1>
             <h2>lololol IPA:</h2>
-            <h3>/əˈbʌv/   /bɔːrd/</h3>
+            <a class='btn' href="/index_1.html"><h3>/əˈbʌv/   /bɔːrd/</h3></a>
         </section>
     </main>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const next = document.querySelector(".next");
-        
-            document.addEventListener("keydown", function(e){
-            next.click();
-    });
-            }, false);
-
-    </script>
+    <script src='./particles.min.js'></script>
+    <script src='./app.js'></script>
 </body>
 </html>
