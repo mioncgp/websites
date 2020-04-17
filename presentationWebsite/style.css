@@ -1,27 +1,45 @@
 :root {
     --page-1-color: steelblue;
     --page-2-color: tan;
-    --page-3-color: teal;
-    --span-color: #e65c00;
+    --page-3-color: #9933ff;
+    --span-color: #663300;
+    --span-2-color: #663300;
     --animate-speed: 2s;
 }
 
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
 body {
     position: relative;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto, Arial, sans-serif;
     line-height: 1.4;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-image: linear-gradient(to top, 
-    #757f9a, #d7dde8);
+    background: #ffe6f2;
     height: 100%;
 }
 /* Utility */
 
 .span {
     color: var(--span-color);
+    font-size: 2.5rem;
 }
+
+.span-2, #second h1 span {
+    color: var(--span-2-color);
+    font-family: "Kanit";
+    font-size: 60px;
+    line-height: 1em;
+    margin: 0;
+    text-align: center;
+    transform: translateY(-50%);
+    width: 100%;
+    text-shadow: 0 1px 0 #e4adad, 0 2px 0 #e1a6a6, 0 3px 0 #df9e9e, 0 4px 0 #dc9696, 0 5px 0 #da8f8f, 0 6px 0 #d78787, 0 7px 0 #d58080, 0 8px 0 #d27878, 0 0 5px rgba(237, 154, 154, 0.05), 0 -1px 3px rgba(237, 154, 154, 0.2), 0 9px 9px rgba(237, 154, 154, 0.5), 0 12px 12px rgba(237, 154, 154, 0.5), 0 15px 15px rgba(237, 154, 154, 0.5);  
+}
+
 
 /* Particles */
 #particles-js {
@@ -35,7 +53,6 @@ body {
 
 /* General styling */
 .page {
-
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -50,37 +67,44 @@ body {
     align-items: center;
     font-size: 2rem;
     line-height: 1.2;
-    color: #000;
+    color: #4d2800;
     margin: 1rem;
-    border: 1px solid grey;
+    border: none;
     padding: 2rem;
     border-radius: 5px;
-    box-shadow: 3px 3px 10px 3px #8e9eab;
-    background-image: linear-gradient(to left, #757F9A , #D7DDE8);
+    box-shadow: 3px 3px 10px 3px #fcb69f;
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
 }
 
 .page #second {
     font-size: 5rem;
     line-height: 1.2;
     margin: 1rem;
-    border: 1px solid grey;
+    border: 1px solid #EECCCC;
     padding: 2rem 5rem;
     border-radius: 5px;
-    color: #000;
-    box-shadow: 3px 3px 10px 3px #8e9eab;
-    background-image: linear-gradient(to left, #8e9eab , #eef2f3);
+    box-shadow: 3px 3px 10px 3px #EECCCC;
+    background: #EECCCC;
+    transition: transform 1s ease;
+}
+
+.page #second:hover {
+    transform: scale(1.1);
 }
 
 .page #third {
     font-size: 4rem;
     line-height: 1.2;
     margin: 1rem;
-    border: 1px solid grey;
+    border: 1px solid #EECCCC;
     padding: 2rem 5rem;
     border-radius: 5px;
-    color: #000;
-    box-shadow: 3px 3px 10px 3px #8e9eab;
-    background-image: linear-gradient(to left, #8e9eab , #eef2f3);
+    box-shadow: 3px 3px 10px 3px #EECCCC;
+    background: #EECCCC;
+    transition: transform 1s ease;
+}
+.page #third:hover {
+    transform: scale(1.1);
 }
 
 .page {
@@ -93,10 +117,13 @@ body {
     padding: 0;
     margin: auto;
     font-size: 2rem;
+    font-family: 'Caveat', cursive;
+    font-size: 4rem;
+    color:#4d2800;
 }
 
-#page-1 #first h2 {
-    font-size: 4rem;
+#page-1 #first {
+    width: 30%;
 }
 
 #page-1 #second {
@@ -116,14 +143,14 @@ body {
 }
 
 #page-2 #first  {
-    min-width: auto;
-    min-height: auto;
+    width: 80%;
+    height: 4%;
     font-size: 1.5rem;
 }
 
 #page-2 #second {
     max-width: 70%;
-    max-height: 50%;
+    height: 60%;
     font-size: 1.5rem;
     padding-bottom: 50px;
 }
@@ -152,7 +179,7 @@ section .last {
 
 #page-3 #third {
     font-size: 2rem;
-    height: 50%;
+    height: 60%;
 }
 
 #page-3 #third h1 {
@@ -199,5 +226,167 @@ html.is-animating .transition-fade {
     color: #000;
 }
 
+/* background */
 
+.white {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+  }
+  .white:before {
+    z-index: 1000;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60vh;
+    background-image: linear-gradient(-180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  }
+  .white:after {
+    z-index: 1000;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20vh;
+    background-image: linear-gradient(0deg, #EBEBEB 0%, rgba(235, 235, 235, 0) 100%);
+  }
+  .squares {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+  }
+  .square {
+    animation: squares 9.5s linear infinite;
+    align-self: flex-end;
+    width: 1em;
+    height: 1em;
+    transform: translateY(100%);
+    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  }
+  .square:nth-child(2) {
+    height: 1.5em;
+    width: 3em;
+    animation-delay: 1s;
+    animation-duration: 17s;
+    -webkit-filter: blur(5px);
+  }
+  .square:nth-child(3) {
+    height: 2em;
+    width: 1em;
+    animation-delay: 1.5s;
+    animation-duration: 8s;
+    -webkit-filter: blur();
+  }
+  .square:nth-child(4) {
+    height: 1em;
+    width: 1.5em;
+    animation-delay: 0.5s;
+    -webkit-filter: blur(3px);
+    animation-duration: 13s;
+  }
+  .square:nth-child(5) {
+    height: 1.25em;
+    width: 2em;
+    animation-delay: 4s;
+    -webkit-filter: blur(2px);
+    animation-duration: 11s;
+  }
+  .square:nth-child(6) {
+    height: 2.5em;
+    width: 2em;
+    animation-delay: 2s;
+    -webkit-filter: blur(1px);
+    animation-duration: 9s;
+  }
+  .square:nth-child(7) {
+    height: 5em;
+    width: 2em;
+    -webkit-filter: blur(2.5px);
+    animation-duration: 12s;
+  }
+  .square:nth-child(8) {
+    height: 1em;
+    width: 3em;
+    animation-delay: 5s;
+    -webkit-filter: blur(6px);
+    animation-duration: 18s;
+  }
+  .square:nth-child(9) {
+    height: 1.5em;
+    width: 2em;
+    -webkit-filter: blur(0.5px);
+    animation-duration: 9s;
+  }
+  .square:nth-child(9) {
+    height: 3em;
+    width: 2.4em;
+    animation-delay: 6s;
+    -webkit-filter: blur(0.5px);
+    animation-duration: 12s;
+  }
+  @keyframes squares {
+    from {
+      transform: translateY(100%) rotate(-50deg);
+    }
+    to {
+      transform: translateY(calc(-100vh + -100%)) rotate(20deg);
+    }
+  }
+  
+/* Page 0 */
+
+#page-0 h1 {
+    font-family: 'CoreCircus', sans-serif;
+    text-transform: uppercase;
+    font-size: 16vw;
+    text-align: center;
+    line-height: 1;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: #f98ca4;
+    text-shadow: -1px -1px 0 #6e1f58, 1px -1px 0 #6e1f58, -1px 1px 0 #6e1f58, 1px 1px 0 #6e1f58, 1px 0px 0px #65f283, 0px 1px 0px #65f283, 2px 1px 0px #65f283, 1px 2px 0px #65f283, 3px 2px 0px #65f283, 2px 3px 0px #65f283, 4px 3px 0px #65f283, 3px 4px 0px #65f283, 5px 4px 0px #65f283, 3px 5px 0px #6e1f58, 6px 5px 0px #6e1f58, -1px 2px 0 black, 0 3px 0 #6e1f58, 1px 4px 0 #6e1f58, 2px 5px 0px #6e1f58, 2px -1px 0 #6e1f58, 3px 0 0 #6e1f58, 4px 1px 0 #6e1f58, 5px 2px 0px #6e1f58, 6px 3px 0 #6e1f58, 7px 4px 0 #6e1f58, 10px 10px 4px #dac249;
+}
+#page-0 h1:after, h1:before {
+    content: attr(data-heading);
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+}
+#page-0 h1:before {
+    text-shadow: -1px -1px 0 #9e132c, 1px -1px 0 #9e132c, -1px 1px 0 #9e132c, 1px 1px 0 #9e132c, 1px 0px 0px #f5b10b, 0px 1px 0px #f5b10b, 2px 1px 0px #f5b10b, 1px 2px 0px #f5b10b, 3px 2px 0px #f5b10b, 2px 3px 0px #f5b10b, 4px 3px 0px #f5b10b, 3px 4px 0px #f5b10b, 5px 4px 0px #f5b10b, 3px 5px 0px #9e132c, 6px 5px 0px #9e132c, -1px 2px 0 black, 0 3px 0 #9e132c, 1px 4px 0 #9e132c, 2px 5px 0px #9e132c, 2px -1px 0 #9e132c, 3px 0 0 #2f3e9c, 4px 1px 0 #9e132c, 5px 2px 0px #9e132c, 6px 3px 0 #9e132c, 7px 4px 0 #9e132c, 10px 10px 4px rgba(106, 241, 119, .8);
+    color: #65f283;
+    height: 66%;
+}
+#page-0  h1:after {
+    height: 33%;
+    color: #4ad9db;
+    text-shadow: -1px -1px 0 #2f3e9c, 1px -1px 0 #2f3e9c, -1px 1px 0 #2f3e9c, 1px 1px 0 #2f3e9c, 1px 0px 0px #f98ca4, 0px 1px 0px #f98ca4, 2px 1px 0px #f98ca4, 1px 2px 0px #f98ca4, 3px 2px 0px #f98ca4, 2px 3px 0px #f98ca4, 4px 3px 0px #f98ca4, 3px 4px 0px #f98ca4, 5px 4px 0px #f98ca4, 3px 5px 0px #2f3e9c, 6px 5px 0px #2f3e9c, -1px 2px 0 black, 0 3px 0 #2f3e9c, 1px 4px 0 #2f3e9c, 2px 5px 0px #2f3e9c, 2px -1px 0 #2f3e9c, 3px 0 0 #2f3e9c, 4px 1px 0 #2f3e9c, 5px 2px 0px #2f3e9c, 6px 3px 0 #2f3e9c, 7px 4px 0 #2f3e9c;
+}
+/* * Webfont: CoreCircus by S-Core * URL: http://www.myfonts.com/fonts/s-core/core-circus/regular/ * Copyright: Copyright (c) 2013 by S-Core Co., Ltd.. All rights reserved. * Licensed pageviews: 10,000 * * Webfont: CoreCircus2DDot1 by S-Core * URL: http://www.myfonts.com/fonts/s-core/core-circus/dot1/ * Copyright: Copyright (c) 2013 by S-Core Co., Ltd.. All rights reserved. * Licensed pageviews: 10,000 */
+@font-face {
+    font-family: 'CoreCircus2DDot1';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'CoreCircus';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'CoreCircusPierrot4';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.eot');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.ttf') format('truetype');
+}
 
