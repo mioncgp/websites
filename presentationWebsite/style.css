@@ -2,7 +2,7 @@
     --page-1-color: steelblue;
     --page-2-color: tan;
     --page-3-color: teal;
-    --page-4-color: slateblue;
+    --span-color: #e65c00;
     --animate-speed: 2s;
 }
 
@@ -15,7 +15,12 @@ body {
     overflow: hidden;
     background-image: linear-gradient(to top, 
     #757f9a, #d7dde8);
-    height: 100%
+    height: 100%;
+}
+/* Utility */
+
+.span {
+    color: var(--span-color);
 }
 
 /* Particles */
@@ -28,10 +33,9 @@ body {
     left: 0
 }
 
-
+/* General styling */
 .page {
-    /* position: absolute;
-    left: 32%; */
+
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -42,7 +46,20 @@ body {
 }
 
 
-.page h1 {
+.page #first {
+    align-items: center;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #000;
+    margin: 1rem;
+    border: 1px solid grey;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px 3px #8e9eab;
+    background-image: linear-gradient(to left, #757F9A , #D7DDE8);
+}
+
+.page #second {
     font-size: 5rem;
     line-height: 1.2;
     margin: 1rem;
@@ -54,7 +71,7 @@ body {
     background-image: linear-gradient(to left, #8e9eab , #eef2f3);
 }
 
-.page h3 {
+.page #third {
     font-size: 4rem;
     line-height: 1.2;
     margin: 1rem;
@@ -66,20 +83,80 @@ body {
     background-image: linear-gradient(to left, #8e9eab , #eef2f3);
 }
 
-.page h2 {
-    font-size: 2rem;
-    line-height: 1.2;
-    margin: 1rem;
-    border: 1px dotted grey;
-    padding: 2rem;
-    border-radius: 5px;
-    color: #000;
-    box-shadow: 3px 3px 10px 3px #8e9eab;
-    background-image: linear-gradient(to left, #757F9A , #D7DDE8);
-}
-
 .page {
     font-size: 1.3rem;
+}
+
+/* First page */
+
+#page-1 #first h2 {
+    padding: 0;
+    margin: auto;
+    font-size: 2rem;
+}
+
+#page-1 #first h2 {
+    font-size: 4rem;
+}
+
+#page-1 #second {
+    font-size: 2.5rem;
+}
+
+#page-1 #third {
+    font-size: 3rem;
+}
+
+/* Second page */
+
+#page-2 #first h2 {
+    padding: 0;
+    margin: auto;
+    font-size: 2rem;
+}
+
+#page-2 #first  {
+    min-width: auto;
+    min-height: auto;
+    font-size: 1.5rem;
+}
+
+#page-2 #second {
+    max-width: 70%;
+    max-height: 50%;
+    font-size: 1.5rem;
+    padding-bottom: 50px;
+}
+
+#flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+section .last {
+    width: 60%;
+    height: 25%;
+}
+
+/* Third Page */
+
+#flex-3 {
+    display: inline-block;
+}
+
+#page-3 #first h2 {
+    padding: 0;
+    margin: auto;
+    font-size: 2rem;
+}
+
+#page-3 #third {
+    font-size: 2rem;
+    height: 50%;
+}
+
+#page-3 #third h1 {
+    font-size: 2.5rem;
 }
 
 /* Page Animation */
@@ -119,8 +196,8 @@ html.is-animating .transition-fade {
 /* buttons */
 .btn {
     text-decoration: none;
-
+    color: #000;
 }
 
-/* Particles */
+
 
