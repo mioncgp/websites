@@ -1,15 +1,17 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&display=swap');
+
+
 :root {
     --page-1-color: steelblue;
     --page-2-color: tan;
     --page-3-color: #9933ff;
-    --span-color: #663300;
+    --span-color: #e67700;
     --span-2-color: #663300;
     --animate-speed: 2s;
 }
 
-/* Fonts */
-
-@import url('https://fonts.googleapis.com/css?family=Roboto:700');
 
 body {
     position: relative;
@@ -25,7 +27,8 @@ body {
 
 .span {
     color: var(--span-color);
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 .span-2, #second h1 span {
@@ -135,11 +138,34 @@ body {
 }
 
 /* Second page */
+#page-2 #flex-3 {
+    display: flex;
+}
+
+#page-2 #second p {
+    border: 1px solid #ffcccc;;
+    padding: 1rem;
+    border-radius: 5px;
+    color:#b3003b;
+    box-shadow: 3px 3px 10px 3px #ffcccc;;
+    background: #ffcccc;
+    width: 430px;
+    height: 270px;
+    margin: 0 1rem;
+    transition: transform 0.7s ease;
+
+}
+
+#page-2 #second p:hover {
+    transform: scale(1.8);
+}
 
 #page-2 #first h2 {
     padding: 0;
     margin: auto;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-family: 'Caveat', cursive;
+    color:#4d2800;
 }
 
 #page-2 #first  {
@@ -150,14 +176,40 @@ body {
 
 #page-2 #second {
     max-width: 70%;
-    height: 60%;
+    height: 40%;
     font-size: 1.5rem;
     padding-bottom: 50px;
 }
 
+#page-2 #second h1 {
+    font-family: 'Seymour One', sans-serif;
+    color:#4d2600;
+}
+
+#page-2 #second p, h4 {
+    font-family: 'IM Fell Double Pica SC', serif;
+    font-size: 40px;
+}
+
+
 #flex {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+}
+
+#flex h4 {
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 7px;
+    background: #ffcccc;
+    color:#cc4400;
+    transition: transform 1s ease;
+}
+
+#flex h4:hover {
+    transform: scale(1.5);
 }
 
 section .last {
