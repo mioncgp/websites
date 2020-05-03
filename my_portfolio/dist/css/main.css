@@ -78,7 +78,7 @@ img {
     color: #404040; }
 
 #header-home {
-  height: 100vh; }
+  height: 90vh; }
   #header-home .header-content {
     text-align: center;
     padding-top: 15%; }
@@ -272,3 +272,22 @@ img {
   100% {
     opacity: 1;
     bottom: 0px; } }
+
+#main-footer {
+  height: 10vh; }
+  #main-footer .social {
+    max-width: 600px;
+    margin: 0 auto; }
+  #main-footer .icons-container {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  #main-footer .icon-container {
+    padding: 1em 1.2em;
+    border-radius: 0.5em;
+    transition: all 0.2s ease-in-out;
+    animation: raise-container 0.35s forwards 0.8s ease-in-out;
+    box-shadow: -12px -12px 12px 0 rgba(255, 255, 255, 0.6), 12px 12px 12px 0 rgba(0, 0, 0, 0.03); }
+    #main-footer .icon-container:hover {
+      transform: scale(1.1); }
