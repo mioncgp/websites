@@ -1,0 +1,49 @@
+// Imports 
+@import  'utilities';
+
+// General Styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.4;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+h2, h3, h4 {
+    text-transform: uppercase;
+}
+
+img {
+    width: 100%;
+}
+
+// logo
+#logo {
+    width: 70px;
+    height: 70px;
+}
+
+// Main-nav 
+#main-nav {
+    display:  flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+
+    ul {
+        display: flex;
+    }
+}
