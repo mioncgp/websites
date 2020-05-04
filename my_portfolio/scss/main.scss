@@ -12,6 +12,7 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.4;
     background-color: $main-color;
+    position: relative;
 }
 
 a {
@@ -65,6 +66,7 @@ img {
     display:  flex;
     justify-content: space-between;
     padding-top: 1rem;
+    position: relative;
 
     ul {
         display: flex;
@@ -111,6 +113,7 @@ img {
 
     &-home {
         height: 90vh;
+        position: relative;
 
             // Header Content
         .header-content {
@@ -167,7 +170,21 @@ img {
                   display: flex;
                   align-items: baseline;
                   position: relative;
-          
+                  text-shadow: 1px 1px 1px #919191,
+                  1px 1px 1px #919191,
+                  1px 2px 1px #919191,
+                  1px 3px 1px #919191,
+                  1px 4px 1px #919191,
+                  1px 5px 1px #919191,
+                  1px 6px 1px #919191,
+                  1px 7px 1px #919191,
+                  1px 8px 1px #919191,
+                  1px 9px 1px #919191,
+                  1px 10px 6px rgba(16,16,16,0.4),
+                  1px 16px 10px rgba(16,16,16,0.2),
+                  1px 19px 35px rgba(16,16,16,0.2),
+                  1px 23px 60px rgba(16,16,16,0.4);
+                  
                   span {
                     width:0px;
                     height: 0px;
@@ -377,6 +394,7 @@ img {
 // Main footer
 #main-footer {
     height: 10vh;
+    position: relative;
 
     .social {
         max-width: 600px;
@@ -402,4 +420,53 @@ img {
         }
     }
 
+}
+
+// lines
+#line {
+  &-horizontal {
+    height: 7px;
+    background: $third-color;
+    position: absolute;
+    top: 85vh;
+    left: 10px;
+    animation-name: animate1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    box-shadow: -10px -10px 20px 0px rgba(255,255,255,0.05), 10px 10px 20px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    opacity: .7;
+  }
+
+  &-vertical {
+    width: 7px;
+    background: $third-color;
+    position: absolute;
+    left: 90vw;
+    top: 10px;
+    animation-name: animate2;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    box-shadow: -10px -10px 20px 0px rgba(255,255,255,0.05), 10px 10px 20px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    opacity: .7;
+  }
+
+  @keyframes animate1 {
+    from {
+      width: 0vw;
+    } to {
+      width: 97vw;
+    }
+  }
+
+  @keyframes animate2 {
+    from {
+      height: 0vh;
+    } to {
+      height: 97vh;
+    }
+  }
 }
