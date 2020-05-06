@@ -1,0 +1,32 @@
+@media(max-height: 1050px) {
+    #main-footer {
+        padding-top: 2rem !important;
+    }
+}
+
+@media(max-height: 1000px) {
+    #main-footer {
+        padding-top: 1.5rem !important;
+    }
+
+    .container2 {
+        padding-top: 2%;
+    }
+}
+
+@media(max-height: 950px) {
+    #main-footer {
+        padding-top: 1.5rem !important;
+    }
+
+    .container2 {
+        padding-top: 1%;
+    }
+}
+
+@media(max-height: 915px) {
+    body {
+        height: 100% !important;
+        overflow: scroll !important;
+    };
+}

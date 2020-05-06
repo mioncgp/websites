@@ -12,6 +12,27 @@
   margin: auto;
   overflow: hidden; }
 
+@media (max-height: 1050px) {
+  #main-footer {
+    padding-top: 2rem !important; } }
+
+@media (max-height: 1000px) {
+  #main-footer {
+    padding-top: 1.5rem !important; }
+  .container2 {
+    padding-top: 2%; } }
+
+@media (max-height: 950px) {
+  #main-footer {
+    padding-top: 1.5rem !important; }
+  .container2 {
+    padding-top: 1%; } }
+
+@media (max-height: 915px) {
+  body {
+    height: 100% !important;
+    overflow: scroll !important; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +42,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   line-height: 1.4;
   background-color: #f1f3f6;
-  height: 100vmin; }
+  height: 100vh; }
 
 a {
   text-decoration: none;
@@ -45,25 +66,26 @@ img {
   margin: 1rem auto;
   overflow: hidden;
   position: relative;
-  text-transform: uppercase;
+  font-weight: 600;
   text-align: center;
   transition: all .5s ease-in-out; }
 
+.ma-1 {
+  margin-bottom: 2rem; }
+
 #logo {
-  width: 96px;
-  height: 96px;
   border: none;
   border-radius: 6px;
   box-shadow: inset 0 0 15px rgba(55, 84, 170, 0), inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(55, 84, 170, 0.15), -7px -7px 20px white, inset 0px 0px 4px rgba(255, 255, 255, 0.2);
   color: #404040;
   font-weight: 700;
-  height: 96px;
+  height: 86px;
+  width: 96px;
   margin-bottom: 18px;
   margin-right: 48px;
   overflow: hidden;
   position: relative;
   text-transform: uppercase;
-  width: 96px;
   text-align: center;
   transition: all .5s ease-in-out; }
   #logo:hover {
@@ -85,13 +107,13 @@ img {
       box-shadow: inset 0 0 15px rgba(55, 84, 170, 0), inset 0 0 20px rgba(255, 255, 255, 0), 7px 7px 15px rgba(55, 84, 170, 0.15), -7px -7px 20px white, inset 0px 0px 4px rgba(255, 255, 255, 0.2);
       color: #404040;
       font-weight: 700;
-      height: 96px;
+      height: 86px;
+      width: 96px;
       margin-bottom: 18px;
       margin-right: 48px;
       overflow: hidden;
       position: relative;
       text-transform: uppercase;
-      width: 96px;
       text-align: center;
       transition: all .5s ease-in-out;
       display: flex;
@@ -258,7 +280,7 @@ img {
 
 #main-footer {
   height: 11%;
-  padding-top: 2rem; }
+  padding-top: 3rem; }
   #main-footer .social {
     max-width: 600px;
     margin: 0 auto; }
@@ -277,7 +299,7 @@ img {
       transform: scale(1.1); }
 
 #line-horizontal {
-  height: .5%;
+  height: 6px;
   background: #666666;
   position: relative;
   animation-name: animate1;
@@ -290,7 +312,7 @@ img {
   z-index: -10; }
 
 #line-horizontal2 {
-  height: .5%;
+  height: 6px;
   background: #666666;
   position: relative;
   animation-name: animate1;
@@ -343,7 +365,7 @@ img {
     text-transform: uppercase;
     text-align: center;
     width: 30%;
-    margin: auto; }
+    margin: 0.5rem auto; }
   #main-about img {
     object-fit: cover;
     width: 300px;
@@ -362,7 +384,8 @@ img {
       position: relative;
       text-transform: uppercase;
       margin: 1rem 1rem;
-      height: 80%; }
+      height: 80%;
+      padding: 1.5rem; }
     #main-about .about-info img {
       text-align: center;
       border: none;
@@ -438,13 +461,15 @@ img {
     .contact .text-forms textarea {
       grid-area: message;
       width: 90%;
-      height: 7rem; }
+      height: 5rem; }
     .contact .text-forms button {
       grid-area: submit;
       width: 30%;
       height: 3rem;
       font-weight: 700;
-      font-size: 1rem; }
+      font-size: 1rem;
+      cursor: pointer;
+      text-transform: uppercase; }
   .contact .infos {
     display: grid;
     grid-gap: 1rem;
@@ -458,3 +483,10 @@ img {
         padding: .2rem; }
       .contact .infos .inf i {
         margin-top: 1rem; }
+
+.transition-fade {
+  transition: 3s !important;
+  opacity: 1 !important; }
+
+html.is-animating .transition-fade {
+  opacity: 0 !important; }
