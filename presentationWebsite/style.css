@@ -31,7 +31,7 @@ body {
     font-family: Roboto, Arial, sans-serif;
     line-height: 1.4;
     overflow: hidden;
-    background: #ffe6f2;
+    background:linear-gradient(10deg, rgba(255, 255, 204, 1) 43%,rgba(230, 255, 255, 1) 43%);
     height: 100%;
 }
 /* Utilities */
@@ -46,7 +46,88 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+/* span */
+.span {
+    color: var(--page-7-color);
+    text-shadow: 2px 2px 5px #b35900;
+}
+
+/* Pass Button */
+.pass {
+    position: absolute;
+    top: 50vh;
+    right: 20px;
+    border-radius: 50%;
+    background-color: #ff9999;;
+    width: 100px;
+    height: 100px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 2rem;
+    box-shadow: -12px -12px 12px 0 rgba(0, 0, 0, 0.03), 12px 12px 12px 0 rgba(0, 0, 0, 0.03);
+    color: var(--page-4-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
+    transition: all 500ms ease-in-out;
+}
+
+.pass:hover {
+    transform: scale(1.1);
+}
 /* Page 0 */
+#page-0 h1 {
+    font-family: 'CoreCircus', sans-serif;
+    text-transform: uppercase;
+    font-size: 16vw;
+    text-align: center;
+    line-height: 1;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: rgb(46,174,231);
+    text-shadow: -1px -1px 0 #6e1f58, 1px -1px 0 #6e1f58, -1px 1px 0 #6e1f58, 1px 1px 0 #6e1f58, 1px 0px 0px #ed315a, 0px 1px 0px #ed315a, 2px 1px 0px #ed315a, 1px 2px 0px #ed315a, 3px 2px 0px #ed315a, 2px 3px 0px #ed315a, 4px 3px 0px #ed315a, 3px 4px 0px #ed315a, 5px 4px 0px #ed315a, 3px 5px 0px #6e1f58, 6px 5px 0px #6e1f58, -1px 2px 0 black, 0 3px 0 #6e1f58, 1px 4px 0 #6e1f58, 2px 5px 0px #6e1f58, 2px -1px 0 #6e1f58, 3px 0 0 #6e1f58, 4px 1px 0 #6e1f58, 5px 2px 0px #6e1f58, 6px 3px 0 #6e1f58, 7px 4px 0 #6e1f58, 10px 10px 4px #dac249;
+}
+
+#page-0 h1:after, h1:before {
+    content: attr(data-heading);
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+}
+
+#page-0 h1:before {
+    text-shadow: -1px -1px 0 #9e132c, 1px -1px 0 #9e132c, -1px 1px 0 #9e132c, 1px 1px 0 #9e132c, 1px 0px 0px #f5b10b, 0px 1px 0px #f5b10b, 2px 1px 0px #f5b10b, 1px 2px 0px #f5b10b, 3px 2px 0px #f5b10b, 2px 3px 0px #f5b10b, 4px 3px 0px #f5b10b, 3px 4px 0px #f5b10b, 5px 4px 0px #f5b10b, 3px 5px 0px #9e132c, 6px 5px 0px #9e132c, -1px 2px 0 black, 0 3px 0 #9e132c, 1px 4px 0 #9e132c, 2px 5px 0px #9e132c, 2px -1px 0 #9e132c, 3px 0 0 #2f3e9c, 4px 1px 0 #9e132c, 5px 2px 0px #9e132c, 6px 3px 0 #9e132c, 7px 4px 0 #9e132c, 10px 10px 4px steelblue;
+    color: rgb(237,49,90);
+    height: 66%;
+}
+#page-0 h1:after {
+    height: 33%;
+    color: rgb(237,49,90);
+    text-shadow: -1px -1px 0 #2f3e9c, 1px -1px 0 #2f3e9c, -1px 1px 0 #2f3e9c, 1px 1px 0 #2f3e9c, 1px 0px 0px #f98ca4, 0px 1px 0px #f98ca4, 2px 1px 0px #f98ca4, 1px 2px 0px #f98ca4, 3px 2px 0px #f98ca4, 2px 3px 0px #f98ca4, 4px 3px 0px #f98ca4, 3px 4px 0px #f98ca4, 5px 4px 0px #f98ca4, 3px 5px 0px #2f3e9c, 6px 5px 0px #2f3e9c, -1px 2px 0 black, 0 3px 0 #2f3e9c, 1px 4px 0 #2f3e9c, 2px 5px 0px #2f3e9c, 2px -1px 0 #2f3e9c, 3px 0 0 #2f3e9c, 4px 1px 0 #2f3e9c, 5px 2px 0px #2f3e9c, 6px 3px 0 #2f3e9c, 7px 4px 0 #2f3e9c;
+}
+/* * Webfont: CoreCircus by S-Core * URL: http://www.myfonts.com/fonts/s-core/core-circus/regular/ * Copyright: Copyright (c) 2013 by S-Core Co., Ltd.. All rights reserved. * Licensed pageviews: 10,000 * * Webfont: CoreCircus2DDot1 by S-Core * URL: http://www.myfonts.com/fonts/s-core/core-circus/dot1/ * Copyright: Copyright (c) 2013 by S-Core Co., Ltd.. All rights reserved. * Licensed pageviews: 10,000 */
+@font-face {
+    font-family: 'CoreCircus2DDot1';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'CoreCircus';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'CoreCircusPierrot4';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.eot');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.ttf') format('truetype');
+}
 /* Page 1 */
 #page-1 {
     height: 90vh;
@@ -65,30 +146,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--page-10-color);
     box-shadow: -12px -12px 12px 0 rgba(0, 0, 0, 0.03), 12px 12px 12px 0 rgba(0, 0, 0, 0.03);
     border-radius: 5px;
     font-size: 2rem;
+    transition: all 500ms ease-in-out;
 }
 
-/* Pass Button */
-.pass {
-    position: absolute;
-    top: 50vh;
-    right: 20px;
-    border-radius: 50%;
-    background-color: #ff6666;
-    width: 100px;
-    height: 100px;
-    text-decoration: none;
-    text-align: center;
-    padding-top: 2rem;
-    box-shadow: -12px -12px 12px 0 rgba(0, 0, 0, 0.03), 12px 12px 12px 0 rgba(0, 0, 0, 0.03);
-    color: var(--page-6-color);
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 1.5rem;
-}
 
 #one {
     color: var(--page-8-color);
@@ -111,3 +174,173 @@ body {
 }
 
 /* Page-2 */
+#page-2 {
+    height: 90vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container-2 {
+    height: 90%;
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -12px -12px 12px 0 rgba(0, 0, 0, 0.03), 12px 12px 12px 0 rgba(0, 0, 0, 0.03);
+    border-radius: 5px;
+    font-size: 2rem;
+    transition: all 500ms ease-in-out;
+}
+
+.container-2 p {
+    color :#663300;
+    text-shadow: 0px 7px 15px #808080;
+    font-size: 2.2rem;
+}
+
+.container-2 h1 {
+    color: #ff1ab3;
+    text-shadow: 2px 2px 5px #b35900;
+}
+
+/* Page 3 */
+#page-3 {
+    height: 90vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container-3 {
+    height: 90%;
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -12px -12px 12px 0 rgba(0, 0, 0, 0.03), 12px 12px 12px 0 rgba(0, 0, 0, 0.03);
+    border-radius: 5px;
+    font-size: 2rem;
+    transition: all 500ms ease-in-out;
+}
+
+.container-3 h1 {
+    color: #ff1ab3;
+    text-shadow: 2px 2px 5px #b35900;
+}
+
+.container-3 h4 {
+    color :#663300;
+    text-shadow: 0px 7px 15px #808080;
+    font-size: 2.2rem;
+
+}
+/* Page-4 */
+#page-4 {
+    height: 90vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container-4 {
+    height: 90%;
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -12px -12px 12px 0 rgba(0, 0, 0, 0.03), 12px 12px 12px 0 rgba(0, 0, 0, 0.03);
+    border-radius: 5px;
+    font-size: 2rem;
+    transition: all 500ms ease-in-out;
+}
+
+.container-4 p {
+    color :#663300;
+    text-shadow: 0px 7px 15px #808080;
+    font-size: 2.2rem;
+}
+
+.container-4 h1 {
+    color: #ff1ab3;
+    text-shadow: 2px 2px 5px #b35900;
+}
+/* Page 5 */
+
+#page-5 h1 {
+    font-family: 'CoreCircus', sans-serif;
+    text-transform: uppercase;
+    font-size: 16vw;
+    text-align: center;
+    line-height: 1;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: rgb(46,174,231);
+    text-shadow: -1px -1px 0 #6e1f58, 1px -1px 0 #6e1f58, -1px 1px 0 #6e1f58, 1px 1px 0 #6e1f58, 1px 0px 0px #ed315a, 0px 1px 0px #ed315a, 2px 1px 0px #ed315a, 1px 2px 0px #ed315a, 3px 2px 0px #ed315a, 2px 3px 0px #ed315a, 4px 3px 0px #ed315a, 3px 4px 0px #ed315a, 5px 4px 0px #ed315a, 3px 5px 0px #6e1f58, 6px 5px 0px #6e1f58, -1px 2px 0 black, 0 3px 0 #6e1f58, 1px 4px 0 #6e1f58, 2px 5px 0px #6e1f58, 2px -1px 0 #6e1f58, 3px 0 0 #6e1f58, 4px 1px 0 #6e1f58, 5px 2px 0px #6e1f58, 6px 3px 0 #6e1f58, 7px 4px 0 #6e1f58, 10px 10px 4px #dac249;
+}
+
+#page-5 h1:after, h1:before {
+    content: attr(data-heading);
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+}
+
+#page-5 h1:before {
+    text-shadow: -1px -1px 0 #9e132c, 1px -1px 0 #9e132c, -1px 1px 0 #9e132c, 1px 1px 0 #9e132c, 1px 0px 0px #f5b10b, 0px 1px 0px #f5b10b, 2px 1px 0px #f5b10b, 1px 2px 0px #f5b10b, 3px 2px 0px #f5b10b, 2px 3px 0px #f5b10b, 4px 3px 0px #f5b10b, 3px 4px 0px #f5b10b, 5px 4px 0px #f5b10b, 3px 5px 0px #9e132c, 6px 5px 0px #9e132c, -1px 2px 0 black, 0 3px 0 #9e132c, 1px 4px 0 #9e132c, 2px 5px 0px #9e132c, 2px -1px 0 #9e132c, 3px 0 0 #2f3e9c, 4px 1px 0 #9e132c, 5px 2px 0px #9e132c, 6px 3px 0 #9e132c, 7px 4px 0 #9e132c, 10px 10px 4px rgba(106, 241, 119, .8);
+    color: rgb(237,49,90);
+    height: 66%;
+}
+#page-5 h1:after {
+    height: 33%;
+    color: rgb(237,49,90);
+    text-shadow: -1px -1px 0 #2f3e9c, 1px -1px 0 #2f3e9c, -1px 1px 0 #2f3e9c, 1px 1px 0 #2f3e9c, 1px 0px 0px #f98ca4, 0px 1px 0px #f98ca4, 2px 1px 0px #f98ca4, 1px 2px 0px #f98ca4, 3px 2px 0px #f98ca4, 2px 3px 0px #f98ca4, 4px 3px 0px #f98ca4, 3px 4px 0px #f98ca4, 5px 4px 0px #f98ca4, 3px 5px 0px #2f3e9c, 6px 5px 0px #2f3e9c, -1px 2px 0 black, 0 3px 0 #2f3e9c, 1px 4px 0 #2f3e9c, 2px 5px 0px #2f3e9c, 2px -1px 0 #2f3e9c, 3px 0 0 #2f3e9c, 4px 1px 0 #2f3e9c, 5px 2px 0px #2f3e9c, 6px 3px 0 #2f3e9c, 7px 4px 0 #2f3e9c;
+}
+/* * Webfont: CoreCircus by S-Core * URL: http://www.myfonts.com/fonts/s-core/core-circus/regular/ * Copyright: Copyright (c) 2013 by S-Core Co., Ltd.. All rights reserved. * Licensed pageviews: 10,000 * * Webfont: CoreCircus2DDot1 by S-Core * URL: http://www.myfonts.com/fonts/s-core/core-circus/dot1/ * Copyright: Copyright (c) 2013 by S-Core Co., Ltd.. All rights reserved. * Licensed pageviews: 10,000 */
+@font-face {
+    font-family: 'CoreCircus2DDot1';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_1_0.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'CoreCircus';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_8_0.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'CoreCircusPierrot4';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.eot');
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.eot?#iefix') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/209981/333BF4_13_0.ttf') format('truetype');
+}
+
+/* hover */
+.container-2:hover, .container-3:hover, .container-4:hover {
+    transform: scale(1.1);
+}
+/* Transitions */
+.transition-fade {
+    transition: .8s;
+    opacity: 1;
+  }
+  
+  html.is-animating .transition-fade {
+    opacity: 0;
+  }
