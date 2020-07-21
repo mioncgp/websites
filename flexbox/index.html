@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .container {
+        background: #555;
+        display: flex;
+        /* removes the scrool bar if there are more than 12 items */
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: 600px;
+        /* the default of align items is "stretch" */
+        align-items: baseline;
+        /* The align-content property modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines. */
+        /* align-content:  center; */
+      }
+
+      .item {
+        background: #f4f4f4;
+        border: #ccc solid 1px;
+        padding: 1rem;
+        text-align: center;
+        /* The flex-basis property specifies the initial length of a flexible item. */
+        flex-basis: 200px;
+
+      }
+
+      .item-2 {
+          /* align single element vertically */
+        align-self: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item"><h3>Item 1</h3></div>
+      <div class="item item-2"><h3>Item 2</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+
+    </div>
+    </div>
+  </body>
+</html>
