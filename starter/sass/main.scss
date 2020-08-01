@@ -11,9 +11,11 @@
 
 // components folder
 @import "./components/button";
+@import "./components/composition";
 
 // layout folder
 @import "layout/header";
+@import "layout/grid";
 
 // pages folder
 @import "pages/home";
