@@ -3,3 +3,14 @@
   display: grid;
   grid-template-columns: 1.5fr 1fr;
 }
+
+.row-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+
+  .col-1-of-4 {
+    width: 30rem;
+  }
+}
