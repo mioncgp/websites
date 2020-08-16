@@ -240,6 +240,13 @@
         </div>
       </section>
       <section class="section-stories">
+        <div class="bg-video">
+          <video class="bg-video__content" autoplay muted loop>
+            <source src="img/video.mp4" type="video/mp4" />
+            <source src="img/video.webm" type="video/web" />
+            Your browser is not supported!
+          </video>
+        </div>
         <div class="u-center-text u-padding-medium">
           <h2 class="heading-secondary">
             We make people happy
@@ -291,6 +298,70 @@
         </div>
         <div class="u-center-text u-margin-top-huge">
           <a href="" class="btn-text">Read all stories</a>
+        </div>
+      </section>
+      <section class="section-book">
+        <div class="row-5">
+          <div class="book">
+            <div class="book__form">
+              <form action="#" class="form">
+                <div class="u-center-text u-margin-bottom-small">
+                  <h2 class="heading-secondary">
+                    Start booking now
+                  </h2>
+                </div>
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    id="name"
+                    placeholder="Full Name"
+                    required
+                  />
+                  <label for="name" class="form__label">Full Name</label>
+                </div>
+                <div class="form__group">
+                  <input
+                    type="email"
+                    class="form__input"
+                    id="email"
+                    placeholder="Email Address"
+                    required
+                  />
+                  <label for="email" class="form__label">Email</label>
+                </div>
+                <div class="form__group">
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="small"
+                      name="size"
+                    />
+                    <label for="small" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Small tour group</label
+                    >
+                  </div>
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="lagre"
+                      name="size"
+                    />
+                    <label for="lagre" class="form__radio-label"
+                      ><span class="form__radio-button"></span> Large tour
+                      group</label
+                    >
+                  </div>
+                  <div class="form__group">
+                    <button class="btn btn--green">Next step</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>

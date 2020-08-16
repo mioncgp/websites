@@ -1,7 +1,9 @@
 /* buttons */
 .btn {
+  &,
   &:link,
-  &:visited {
+  &:visited,
+  &:focus {
     text-transform: uppercase;
     text-decoration: none;
     padding: 1.5rem 4rem;
@@ -9,6 +11,9 @@
     border-radius: 10rem;
     transition: all 0.2s;
     position: relative;
+    outline: none;
+    border: none;
+    cursor: pointer;
   }
 
   &:hover {
@@ -35,6 +40,14 @@
     }
   }
 
+  &--green {
+    background-color: $primary-color;
+    color: $color-white;
+    padding: 1.8rem;
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
   &::after {
     content: "";
     display: inline-block;
@@ -56,6 +69,7 @@
 }
 
 .btn-text {
+  &,
   &:link,
   &:visited {
     font-size: $default-font-size;

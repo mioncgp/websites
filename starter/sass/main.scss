@@ -15,10 +15,12 @@
 @import "./components/feature-box";
 @import "./components/card";
 @import "./components/story";
+@import "./components/_bg-video";
+@import "./components/_form";
 
 // layout folder
 @import "layout/header";
 @import "layout/grid";
 
 // pages folder
-@import "pages/home";
+@import "./pages/home";
